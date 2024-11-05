@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-xb5pOyefoLS0HcC0FvE81eSUKGH8+FT/6A2sEr1Tf06f6ch99N1Tw12Qz0JcStQvDr5VT3Jd+4s6GH/0Zg9f+A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="p-5 mb-4 bg-light rounded-3">
+                    <div class="container-fluid py-5">
+                        <h1 class="display-5 fw-bold text-center">Tienda Adso</n1>
+                            <p class="text-center fs-4 ">
+                                Ejercicio de Manipulacion del doom de html.
+                            </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4">
+            <div class="mb-3">
+                <label for="txt_descrip" class="form-label col-md-4-center">Descripción del Producto</label>
+                <input id="txt_descrip" type="text" class="form-control">
+            </div>
+            <div class="mb-3">
+                <label for="txt_cant" class="form-label">Cantidad</label>
+                <input id="txt_cant" type="number" class="form-control">
+                
+            </div>
+            <div class="mb-3">
+                <label for="txt_precio" class="form-label">Precio</label>
+                <input id="txt_precio" type="number" class="form-control">
+
+            </div>
+            
+
+            <button id="btnAgregarPro" type="button" class="btn btn-primary">Agregar Producto</button>
+            
+        </div>
+        
+        <div class="col-md-8">
+            <div class="row">
+                <div class="col-md-12">
+                    <table class="table" style="width: 100%;">
+                        <thead>
+                            <tr>
+                                <td>#</td>
+                                <td>Descripción Producto</td>
+                                <td class="text-center">Cantidad</td>
+                                <td>Precio</td>
+                                <td>SubTotal</td>
+                            </tr>
+                        </thead>
+                        <tbody id="cuerpo_table">
+                            <!-- <tr>
+                                <td id="#">1</td>
+                                <td id="pro">Jabón</td>
+                                <td id="can" class="text-center">5</td>
+                                <td id="precio">$2.000,00</td>
+                                <td id="total">$10.000,00</td>
+                                
+                            </tr> -->
+                        </tbody>
+                    </table>
+                    <h3 id="txt_total"></h3>
+                    <button id="btnlimp" type="button" class="btn btn-primary">Limpiar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src='js/main.js'></script>
+</body>
+</html>
